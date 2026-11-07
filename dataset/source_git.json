@@ -1,0 +1,22 @@
+{
+	"name": "source_git",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "connection_git",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "trish617/azure_data_factory_practice/refs/heads/main/customers.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
